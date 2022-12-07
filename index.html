@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <title>Detran Cadastrar</title>
+</head>
+
+<body>
+    <div class="image">
+        <img src="./LOGO-SITE-DETRANMG.png" />
+    </div>
+    <!– Você precisa criar um formulário para inserir/exibir os dados abaixo.
+    Nome: Gabriel Gomes  
+    Idade: 25
+    Profissão: Programador  
+    Email: programador@rethink.dev 
+    Telefone: (31) 9 9999-9999 
+    Data de Preenchimento:  19/10/2022 –>
+
+    <div class="container">
+        <div class="header">
+            <h2>Novo Cadastro</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome</label>
+                <input type="text" id="username" placeholder="Digite um nome..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="age">Idade</label>
+                <input type="text" id="age" placeholder="Digite a idade..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="profession">Pofissão</label>
+                <input type="text" id="profession" placeholder="Digite a profissão..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Digite o email.." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Telefone</label>
+                <input type="text" id="phone" placeholder="Digite o telefone..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="date">Data de preenchimento</label>
+                <input type="date" id="date" />
+                <small>Mensagem de erro</small>
+            </div>
+
+            <button type="submit" id="send" >Enviar</button>
+
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/6ab5f80292.js" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

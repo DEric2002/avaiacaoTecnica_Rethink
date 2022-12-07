@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff 0%, #ff0000 80%, #ff0000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.image img {
+    background: url(imagem.jpg./LOGO-SITE-DETRANMG.png) no-repeat scroll left top;
+    position: absolute;
+    top: 10px;
+    height: 125px;
+    width: 125px;
+    z-index: 100;
+    left: 10pt;
+}
+
+.header {
+    background-color: #ff5c5c;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #ff5c5c;
+    border: 2px solid #ff5c5c;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+
+/* Error and Success*/
+
+.form-control.success input {
+    border-color: #40c055;
+}
+
+.form-control.error input {
+    border-color: #ff0000;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #40c055;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #ff0000;
+    visibility: visible;
+}
+
+.form-control.error small {
+    color: #ff0000;
+    visibility: visible;
+}
